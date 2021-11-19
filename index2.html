@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <div id="root">
+            <div>
+                <h3 id="title">I'm a title: 0</h3>
+                <button style="background-color: tomato;" id="btn">Click !!</button></div>
+            </div>
+        </div>
+    </body>
+    <script>
+        let count = 0;
+        const title = document.getElementById("title");
+        const btn = document.getElementById("btn");
+        const countUp = () => {
+            count = count + 1;
+            title.innerHTML = `I'm a title: ${count}`;
+        }
+        btn.addEventListener("click", countUp);
+    </script>
+</html>
